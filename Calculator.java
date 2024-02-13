@@ -1,4 +1,4 @@
-public class Calculator extends Opertion {
+public class Calculator {
 
     // The code you provided is defining four methods in the Calculator class:
     // addition, subtraction,
