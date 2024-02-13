@@ -19,12 +19,26 @@ public class Calculator {
         return opr1 / opr2;
     }
 
-    /**
-     * The main function creates an instance of the Calculator class, performs
-     * addition, subtraction,
-     * multiplication, and division operations on two operands, and prints the
-     * results.
-     */
+   public class Calculator extends extendcalc {
+
+    // The code you provided is defining four methods in the Calculator class:
+    // addition, subtraction,
+    // multiplication, and division.
+    float addition(float opr1, float opr2) {
+        return opr1 + opr2;
+    }
+
+    float subtraction(float opr1, float opr2) {
+        return opr1 - opr2;
+    }
+
+    float multiplication(float opr1, float opr2) {
+        return opr1 * opr2;
+    }
+
+    float division(float opr1, float opr2) {
+        return opr1 / opr2;
+    }
     public static void main(String[] args) {
         // float square,cube,modulus;
         Calculator calc = new Calculator();
@@ -44,8 +58,15 @@ public class Calculator {
         System.out.println("Square = " + sq); // Print square result
         float cu = calc.cube(opr1); // Call cube method
         System.out.println("Cube = " + cu); // Print cube result
-        float mu = calc.modulus(opr1, opr2); // Call modulus method
+        float mu = calc.mod(opr1, opr2); // Call modulus method
         System.out.println("Modulus = " + mu);
 
     }
 }
+
+    /**
+     * The main function creates an instance of the Calculator class, performs
+     * addition, subtraction,
+     * multiplication, and division operations on two operands, and prints the
+     * results.
+     */
